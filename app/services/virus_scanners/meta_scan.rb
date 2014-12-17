@@ -19,6 +19,7 @@ module Services
           while progress < 100
             sleep(1)
             progress = progress_percentage(request_tracker)
+            puts "#{progress}%"
           end 
         end
 
