@@ -15,9 +15,9 @@ group :test do
   gem 'rspec'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'rspec-rails'
 end
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
 end

@@ -13,14 +13,14 @@ module Services
           if clamscan_path.blank?
             raise 'Clam AV not found'
           else
-            "#{clamscan_path} #{local_file_path}"
+            "#{clamscan_path.chomp} #{local_file_path}"
           end
         end
 
 
         def infections(output)
           # note the /m - multiline matching, important
-          output.gsub(/.*Infected files:\s*([0-9]+)\s+.*/m, '\1').to_i
+          output.gsub(/.*Infected files:\s*([0-9]+)\s+.*/mi, '\1').to_i
         end
 
         def clamscan_path
