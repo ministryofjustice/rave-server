@@ -1,10 +1,10 @@
 module Services
   module VirusScanners
     class Base
-      attr_accessor :auth_hash
+      attr_accessor :options
 
-      def initialize(auth_hash)
-        self.au = local_file_path
+      def initialize(opts={})
+        self.options = opts
       end
 
       def is_safe?(local_file_path)
