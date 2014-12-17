@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+gem 'doorkeeper'
 gem 'rails', '4.1.8'
 gem 'rails-api'
 gem 'sqlite3'
