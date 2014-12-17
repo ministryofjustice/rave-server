@@ -24,7 +24,7 @@ module Services
         end
 
         def clamscan_path
-          `which clamscan`
+          `which clamscan`.chomp
         end
     end
   end
